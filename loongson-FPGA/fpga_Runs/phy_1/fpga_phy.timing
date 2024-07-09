@@ -1,0 +1,237 @@
+=========================================================================================================
+Auto created by Tang Dynasty v5.6.71036
+   Copyright (c) 2012-2023 Anlogic Inc.
+Tue Jul  9 15:13:31 2024
+=========================================================================================================
+
+
+Top Model:                top_module                                                      
+Device:                   eagle_20                                                        
+Timing Constraint File:                                                                   
+STA Level:                Detail                                                          
+Speed Grade:              NA                                                              
+
+=========================================================================================================
+Timing constraint:        Path Delay                                                      
+Path delay: 999.7ns max
+
+10 endpoints analyzed totally, and 10 paths analyzed
+0 errors detected : 0 setup errors (TNS = 0.000), 0 hold errors (TNS = 0.000)
+Slowest path delay 0.891ns
+---------------------------------------------------------------------------------------------------------
+
+Paths for end point fifo/fifo_generator_0_u/rd_to_wr_cross_inst/reg3_syn_46 (1 paths)
+---------------------------------------------------------------------------------------------------------
+ Slack (max path):        998.809 ns                                                      
+ Start Point:             f_m/data_fx_b1_n4154_syn_15.clk                                 
+ End Point:               fifo/fifo_generator_0_u/rd_to_wr_cross_inst/reg3_syn_46.mi[0]   
+ Process:                 Slow                                                            
+ Data Path Delay:         0.891ns  (logic 0.289ns, net 0.602ns, 32% logic)                
+ Logic Levels:            0                                                               
+
+ Point                                                       Type                     Incr        Path      Info          
+---------------------------------------------------------------------------------------------------------
+ f_m/data_fx_b1_n4154_syn_15.clk                             clock                   0.000       0.000
+ f_m/data_fx_b1_n4154_syn_15.q[0]                            clk2q                   0.146 r     0.146
+ fifo/fifo_generator_0_u/rd_to_wr_cross_inst/reg3_syn_46.mi[0] (fifo/fifo_generator_0_u/rd_to_wr_cross_inst/primary_addr_gray_reg[9]) net  (fanout = 1)       0.602 r     0.748      ../../al_ip/FIFO.v(303)
+ fifo/fifo_generator_0_u/rd_to_wr_cross_inst/reg3_syn_46     path2reg0               0.143       0.891
+ Arrival time                                                                        0.891                  (0 lvl)       
+
+ fifo/fifo_generator_0_u/rd_to_wr_cross_inst/reg3_syn_46.clk                         0.000       0.000
+ delay budget                                                                      999.700     999.700
+ cell setup                                                                         -0.000     999.700
+ clock uncertainty                                                                  -0.000     999.700
+ Required time                                                                     999.700            
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                             998.809ns          
+
+---------------------------------------------------------------------------------------------------------
+
+Paths for end point f_m/data_fx_b1_n4149_syn_32 (1 paths)
+---------------------------------------------------------------------------------------------------------
+ Slack (max path):        998.809 ns                                                      
+ Start Point:             fifo/fifo_generator_0_u/rd_to_wr_cross_inst/reg0_syn_63.clk     
+ End Point:               f_m/data_fx_b1_n4149_syn_32.mi[0]                               
+ Process:                 Slow                                                            
+ Data Path Delay:         0.891ns  (logic 0.289ns, net 0.602ns, 32% logic)                
+ Logic Levels:            0                                                               
+
+ Point                                                       Type                     Incr        Path      Info          
+---------------------------------------------------------------------------------------------------------
+ fifo/fifo_generator_0_u/rd_to_wr_cross_inst/reg0_syn_63.clk clock                   0.000       0.000
+ fifo/fifo_generator_0_u/rd_to_wr_cross_inst/reg0_syn_63.q[1] clk2q                   0.146 r     0.146
+ f_m/data_fx_b1_n4149_syn_32.mi[0] (fifo/fifo_generator_0_u/rd_to_wr_cross_inst/primary_addr_gray_reg[7]) net  (fanout = 1)       0.602 r     0.748      ../../al_ip/FIFO.v(303)
+ f_m/data_fx_b1_n4149_syn_32                                 path2reg0               0.143       0.891
+ Arrival time                                                                        0.891                  (0 lvl)       
+
+ f_m/data_fx_b1_n4149_syn_32.clk                                                     0.000       0.000
+ delay budget                                                                      999.700     999.700
+ cell setup                                                                         -0.000     999.700
+ clock uncertainty                                                                  -0.000     999.700
+ Required time                                                                     999.700            
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                             998.809ns          
+
+---------------------------------------------------------------------------------------------------------
+
+Paths for end point fifo/fifo_generator_0_u/rd_to_wr_cross_inst/reg3_syn_53 (1 paths)
+---------------------------------------------------------------------------------------------------------
+ Slack (max path):        998.935 ns                                                      
+ Start Point:             f_m/data_fx_b1_n4153_syn_19.clk                                 
+ End Point:               fifo/fifo_generator_0_u/rd_to_wr_cross_inst/reg3_syn_53.mi[1]   
+ Process:                 Slow                                                            
+ Data Path Delay:         0.765ns  (logic 0.289ns, net 0.476ns, 37% logic)                
+ Logic Levels:            0                                                               
+
+ Point                                                       Type                     Incr        Path      Info          
+---------------------------------------------------------------------------------------------------------
+ f_m/data_fx_b1_n4153_syn_19.clk                             clock                   0.000       0.000
+ f_m/data_fx_b1_n4153_syn_19.q[0]                            clk2q                   0.146 r     0.146
+ fifo/fifo_generator_0_u/rd_to_wr_cross_inst/reg3_syn_53.mi[1] (fifo/fifo_generator_0_u/rd_to_wr_cross_inst/primary_addr_gray_reg[5]) net  (fanout = 1)       0.476 r     0.622      ../../al_ip/FIFO.v(303)
+ fifo/fifo_generator_0_u/rd_to_wr_cross_inst/reg3_syn_53     path2reg1               0.143       0.765
+ Arrival time                                                                        0.765                  (0 lvl)       
+
+ fifo/fifo_generator_0_u/rd_to_wr_cross_inst/reg3_syn_53.clk                         0.000       0.000
+ delay budget                                                                      999.700     999.700
+ cell setup                                                                         -0.000     999.700
+ clock uncertainty                                                                  -0.000     999.700
+ Required time                                                                     999.700            
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                             998.935ns          
+
+---------------------------------------------------------------------------------------------------------
+
+Fastest path checks:
+---------------------------------------------------------------------------------------------------------
+
+=========================================================================================================
+Timing constraint:        Path Delay                                                      
+Path delay: 999.7ns max
+
+13 endpoints analyzed totally, and 13 paths analyzed
+0 errors detected : 0 setup errors (TNS = 0.000), 0 hold errors (TNS = 0.000)
+Slowest path delay 1.038ns
+---------------------------------------------------------------------------------------------------------
+
+Paths for end point fifo/fifo_generator_0_u/sub1_syn_78 (1 paths)
+---------------------------------------------------------------------------------------------------------
+ Slack (max path):        998.662 ns                                                      
+ Start Point:             fifo/fifo_generator_0_u/wr_to_rd_cross_inst/reg0_syn_67.clk     
+ End Point:               fifo/fifo_generator_0_u/sub1_syn_78.mi[1]                       
+ Process:                 Slow                                                            
+ Data Path Delay:         1.038ns  (logic 0.289ns, net 0.749ns, 27% logic)                
+ Logic Levels:            0                                                               
+
+ Point                                                       Type                     Incr        Path      Info          
+---------------------------------------------------------------------------------------------------------
+ fifo/fifo_generator_0_u/wr_to_rd_cross_inst/reg0_syn_67.clk clock                   0.000       0.000
+ fifo/fifo_generator_0_u/wr_to_rd_cross_inst/reg0_syn_67.q[1] clk2q                   0.146 r     0.146
+ fifo/fifo_generator_0_u/sub1_syn_78.mi[1] (fifo/fifo_generator_0_u/wr_to_rd_cross_inst/primary_addr_gray_reg[2]) net  (fanout = 1)       0.749 r     0.895      ../../al_ip/FIFO.v(303)
+ fifo/fifo_generator_0_u/sub1_syn_78                         path2reg1               0.143       1.038
+ Arrival time                                                                        1.038                  (0 lvl)       
+
+ fifo/fifo_generator_0_u/sub1_syn_78.clk                                             0.000       0.000
+ delay budget                                                                      999.700     999.700
+ cell setup                                                                         -0.000     999.700
+ clock uncertainty                                                                  -0.000     999.700
+ Required time                                                                     999.700            
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                             998.662ns          
+
+---------------------------------------------------------------------------------------------------------
+
+Paths for end point fifo/fifo_generator_0_u/wr_to_rd_cross_inst/reg3_syn_60 (1 paths)
+---------------------------------------------------------------------------------------------------------
+ Slack (max path):        998.809 ns                                                      
+ Start Point:             fifo/fifo_generator_0_u/wr_to_rd_cross_inst/reg0_syn_76.clk     
+ End Point:               fifo/fifo_generator_0_u/wr_to_rd_cross_inst/reg3_syn_60.mi[0]   
+ Process:                 Slow                                                            
+ Data Path Delay:         0.891ns  (logic 0.289ns, net 0.602ns, 32% logic)                
+ Logic Levels:            0                                                               
+
+ Point                                                       Type                     Incr        Path      Info          
+---------------------------------------------------------------------------------------------------------
+ fifo/fifo_generator_0_u/wr_to_rd_cross_inst/reg0_syn_76.clk clock                   0.000       0.000
+ fifo/fifo_generator_0_u/wr_to_rd_cross_inst/reg0_syn_76.q[0] clk2q                   0.146 r     0.146
+ fifo/fifo_generator_0_u/wr_to_rd_cross_inst/reg3_syn_60.mi[0] (fifo/fifo_generator_0_u/wr_to_rd_cross_inst/primary_addr_gray_reg[6]) net  (fanout = 1)       0.602 r     0.748      ../../al_ip/FIFO.v(303)
+ fifo/fifo_generator_0_u/wr_to_rd_cross_inst/reg3_syn_60     path2reg0               0.143       0.891
+ Arrival time                                                                        0.891                  (0 lvl)       
+
+ fifo/fifo_generator_0_u/wr_to_rd_cross_inst/reg3_syn_60.clk                         0.000       0.000
+ delay budget                                                                      999.700     999.700
+ cell setup                                                                         -0.000     999.700
+ clock uncertainty                                                                  -0.000     999.700
+ Required time                                                                     999.700            
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                             998.809ns          
+
+---------------------------------------------------------------------------------------------------------
+
+Paths for end point fifo/fifo_generator_0_u/wr_to_rd_cross_inst/reg1_syn_46 (1 paths)
+---------------------------------------------------------------------------------------------------------
+ Slack (max path):        998.809 ns                                                      
+ Start Point:             fifo/fifo_generator_0_u/wr_to_rd_cross_inst/reg0_syn_76.clk     
+ End Point:               fifo/fifo_generator_0_u/wr_to_rd_cross_inst/reg1_syn_46.mi[0]   
+ Process:                 Slow                                                            
+ Data Path Delay:         0.891ns  (logic 0.289ns, net 0.602ns, 32% logic)                
+ Logic Levels:            0                                                               
+
+ Point                                                       Type                     Incr        Path      Info          
+---------------------------------------------------------------------------------------------------------
+ fifo/fifo_generator_0_u/wr_to_rd_cross_inst/reg0_syn_76.clk clock                   0.000       0.000
+ fifo/fifo_generator_0_u/wr_to_rd_cross_inst/reg0_syn_76.q[1] clk2q                   0.146 r     0.146
+ fifo/fifo_generator_0_u/wr_to_rd_cross_inst/reg1_syn_46.mi[0] (fifo/fifo_generator_0_u/wr_to_rd_cross_inst/primary_addr_gray_reg[7]) net  (fanout = 1)       0.602 r     0.748      ../../al_ip/FIFO.v(303)
+ fifo/fifo_generator_0_u/wr_to_rd_cross_inst/reg1_syn_46     path2reg0               0.143       0.891
+ Arrival time                                                                        0.891                  (0 lvl)       
+
+ fifo/fifo_generator_0_u/wr_to_rd_cross_inst/reg1_syn_46.clk                         0.000       0.000
+ delay budget                                                                      999.700     999.700
+ cell setup                                                                         -0.000     999.700
+ clock uncertainty                                                                  -0.000     999.700
+ Required time                                                                     999.700            
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                             998.809ns          
+
+---------------------------------------------------------------------------------------------------------
+
+Fastest path checks:
+---------------------------------------------------------------------------------------------------------
+
+=========================================================================================================
+Timing summary:                                                                           
+---------------------------------------------------------------------------------------------------------
+Constraint path number: 23 (STA coverage = 0.13%)
+Timing violations: 0 setup errors, and 0 hold errors.
+Minimal setup slack: 998.662, minimal hold slack: infinity
+
+Timing group statistics: 
+	Clock constraints: 
+	  No constraint path
+	Minimum input arrival time before clock: no constraint path
+	Maximum output required time after clock: no constraint path
+	Maximum combinational path delay: no constraint path
+
+
+Warning: No clock constraint on 12 clock net(s): 
+	PULSE_G_syn_5
+	ad0_clk_syn_7
+	ad1_clk_dup_1
+	ad_delay/clk_20b
+	csget/mcu_write_start_n_syn_2
+	dac/da_wave_send/clk
+	f_div/clk
+	f_div2/clk_syn_4
+	f_m/clk_fs
+	fifo/fifo_generator_0_u/clkr
+	fx_clk_dup_1
+	sys_clk_dup_1
+
+	Exceptions:
+
+		Check Type:	MIN
+		----------------------------------------------------------------------------------------------------
+		       Path Num     Constraint                                                                      
+		             10     set_false_path -hold -from [ get_regs {rd_to_wr_cross_inst/primary_addr_gray_reg[*]} ] -to [ get_regs {rd_to_wr_cross_inst/sync_r1[*]} ]
+		             13     set_false_path -hold -from [ get_regs {wr_to_rd_cross_inst/primary_addr_gray_reg[*]} ] -to [ get_regs {wr_to_rd_cross_inst/sync_r1[*]} ]
+
+---------------------------------------------------------------------------------------------------------

@@ -1,0 +1,150 @@
+<chipwatcher project_name="fpga" bit_file="fpga_Runs/phy_1/fpga.bit" bid_file="fpga_Runs/phy_1/fpga_inst.bid" chip_name="EG4X20BG256">
+<!-- HMAC is: 24af515326b4f2bfba7b10b4b93cc171b1e4f9ca4469fd728df45e3a1bc90163 -->
+	<instance name="auto_chipwatcher_0" id="0" enabled="yes">
+		<clock clk_name="da_clk" polarity="posedge"/>
+		<config bram_name="auto_chipwatcher_0_logicbram" sample_depth="1024"/>
+		<signal_vec>
+			<data_nets>
+				<net name="data_fx[0]"/>
+				<net name="data_fx[10]"/>
+				<net name="data_fx[11]"/>
+				<net name="data_fx[12]"/>
+				<net name="data_fx[13]"/>
+				<net name="data_fx[14]"/>
+				<net name="data_fx[15]"/>
+				<net name="data_fx[16]"/>
+				<net name="data_fx[17]"/>
+				<net name="data_fx[18]"/>
+				<net name="data_fx[19]"/>
+				<net name="data_fx[1]"/>
+				<net name="data_fx[20]"/>
+				<net name="data_fx[21]"/>
+				<net name="data_fx[22]"/>
+				<net name="data_fx[23]"/>
+				<net name="data_fx[24]"/>
+				<net name="data_fx[25]"/>
+				<net name="data_fx[26]"/>
+				<net name="data_fx[27]"/>
+				<net name="data_fx[28]"/>
+				<net name="data_fx[29]"/>
+				<net name="data_fx[2]"/>
+				<net name="data_fx[30]"/>
+				<net name="data_fx[31]"/>
+				<net name="data_fx[32]"/>
+				<net name="data_fx[33]"/>
+				<net name="data_fx[34]"/>
+				<net name="data_fx[35]"/>
+				<net name="data_fx[36]"/>
+				<net name="data_fx[37]"/>
+				<net name="data_fx[38]"/>
+				<net name="data_fx[39]"/>
+				<net name="data_fx[3]"/>
+				<net name="data_fx[40]"/>
+				<net name="data_fx[41]"/>
+				<net name="data_fx[42]"/>
+				<net name="data_fx[43]"/>
+				<net name="data_fx[44]"/>
+				<net name="data_fx[45]"/>
+				<net name="data_fx[46]"/>
+				<net name="data_fx[47]"/>
+				<net name="data_fx[48]"/>
+				<net name="data_fx[49]"/>
+				<net name="data_fx[4]"/>
+				<net name="data_fx[50]"/>
+				<net name="data_fx[51]"/>
+				<net name="data_fx[52]"/>
+				<net name="data_fx[53]"/>
+				<net name="data_fx[54]"/>
+				<net name="data_fx[55]"/>
+				<net name="data_fx[56]"/>
+				<net name="data_fx[57]"/>
+				<net name="data_fx[58]"/>
+				<net name="data_fx[59]"/>
+				<net name="data_fx[5]"/>
+				<net name="data_fx[60]"/>
+				<net name="data_fx[61]"/>
+				<net name="data_fx[62]"/>
+				<net name="data_fx[63]"/>
+				<net name="data_fx[6]"/>
+				<net name="data_fx[7]"/>
+				<net name="data_fx[8]"/>
+				<net name="data_fx[9]"/>
+			</data_nets>
+			<watcher_nodes>
+				<bus name="data_fx" radix="bin" state="collapse" op="dont_care" type="reg">
+					<net name="data_fx[63]" type="reg" trigger="enable"/>
+					<net name="data_fx[62]" type="reg" trigger="enable"/>
+					<net name="data_fx[61]" type="reg" trigger="enable"/>
+					<net name="data_fx[60]" type="reg" trigger="enable"/>
+					<net name="data_fx[59]" type="reg" trigger="enable"/>
+					<net name="data_fx[58]" type="reg" trigger="enable"/>
+					<net name="data_fx[57]" type="reg" trigger="enable"/>
+					<net name="data_fx[56]" type="reg" trigger="enable"/>
+					<net name="data_fx[55]" type="reg" trigger="enable"/>
+					<net name="data_fx[54]" type="reg" trigger="enable"/>
+					<net name="data_fx[53]" type="reg" trigger="enable"/>
+					<net name="data_fx[52]" type="reg" trigger="enable"/>
+					<net name="data_fx[51]" type="reg" trigger="enable"/>
+					<net name="data_fx[50]" type="reg" trigger="enable"/>
+					<net name="data_fx[49]" type="reg" trigger="enable"/>
+					<net name="data_fx[48]" type="reg" trigger="enable"/>
+					<net name="data_fx[47]" type="reg" trigger="enable"/>
+					<net name="data_fx[46]" type="reg" trigger="enable"/>
+					<net name="data_fx[45]" type="reg" trigger="enable"/>
+					<net name="data_fx[44]" type="reg" trigger="enable"/>
+					<net name="data_fx[43]" type="reg" trigger="enable"/>
+					<net name="data_fx[42]" type="reg" trigger="enable"/>
+					<net name="data_fx[41]" type="reg" trigger="enable"/>
+					<net name="data_fx[40]" type="reg" trigger="enable"/>
+					<net name="data_fx[39]" type="reg" trigger="enable"/>
+					<net name="data_fx[38]" type="reg" trigger="enable"/>
+					<net name="data_fx[37]" type="reg" trigger="enable"/>
+					<net name="data_fx[36]" type="reg" trigger="enable"/>
+					<net name="data_fx[35]" type="reg" trigger="enable"/>
+					<net name="data_fx[34]" type="reg" trigger="enable"/>
+					<net name="data_fx[33]" type="reg" trigger="enable"/>
+					<net name="data_fx[32]" type="reg" trigger="enable"/>
+					<net name="data_fx[31]" type="reg" trigger="enable"/>
+					<net name="data_fx[30]" type="reg" trigger="enable"/>
+					<net name="data_fx[29]" type="reg" trigger="enable"/>
+					<net name="data_fx[28]" type="reg" trigger="enable"/>
+					<net name="data_fx[27]" type="reg" trigger="enable"/>
+					<net name="data_fx[26]" type="reg" trigger="enable"/>
+					<net name="data_fx[25]" type="reg" trigger="enable"/>
+					<net name="data_fx[24]" type="reg" trigger="enable"/>
+					<net name="data_fx[23]" type="reg" trigger="enable"/>
+					<net name="data_fx[22]" type="reg" trigger="enable"/>
+					<net name="data_fx[21]" type="reg" trigger="enable"/>
+					<net name="data_fx[20]" type="reg" trigger="enable"/>
+					<net name="data_fx[19]" type="reg" trigger="enable"/>
+					<net name="data_fx[18]" type="reg" trigger="enable"/>
+					<net name="data_fx[17]" type="reg" trigger="enable"/>
+					<net name="data_fx[16]" type="reg" trigger="enable"/>
+					<net name="data_fx[15]" type="reg" trigger="enable"/>
+					<net name="data_fx[14]" type="reg" trigger="enable"/>
+					<net name="data_fx[13]" type="reg" trigger="enable"/>
+					<net name="data_fx[12]" type="reg" trigger="enable"/>
+					<net name="data_fx[11]" type="reg" trigger="enable"/>
+					<net name="data_fx[10]" type="reg" trigger="enable"/>
+					<net name="data_fx[9]" type="reg" trigger="enable"/>
+					<net name="data_fx[8]" type="reg" trigger="enable"/>
+					<net name="data_fx[7]" type="reg" trigger="enable"/>
+					<net name="data_fx[6]" type="reg" trigger="enable"/>
+					<net name="data_fx[5]" type="reg" trigger="enable"/>
+					<net name="data_fx[4]" type="reg" trigger="enable"/>
+					<net name="data_fx[3]" type="reg" trigger="enable"/>
+					<net name="data_fx[2]" type="reg" trigger="enable"/>
+					<net name="data_fx[1]" type="reg" trigger="enable"/>
+					<net name="data_fx[0]" type="reg" trigger="enable"/>
+				</bus>
+			</watcher_nodes>
+		</signal_vec>
+		<trigger name="auto_chipwatcher_0_trigger" position="pre">
+			<condition level="1" enabled="yes" type="basic_and">
+				data_fx[0] == high && data_fx[10] == low && data_fx[11] == low && data_fx[12] == low && data_fx[13] == low && data_fx[14] == low && data_fx[15] == low && data_fx[16] == low && data_fx[17] == low && data_fx[18] == low && data_fx[19] == low && data_fx[1] == low && data_fx[20] == low && data_fx[21] == low && data_fx[22] == low && data_fx[23] == low && data_fx[24] == low && data_fx[25] == low && data_fx[26] == low && data_fx[27] == low && data_fx[28] == low && data_fx[29] == low && data_fx[2] == low && data_fx[30] == low && data_fx[31] == low && data_fx[32] == low && data_fx[33] == low && data_fx[34] == low && data_fx[35] == low && data_fx[36] == low && data_fx[37] == low && data_fx[38] == low && data_fx[39] == low && data_fx[3] == low && data_fx[40] == low && data_fx[41] == low && data_fx[42] == low && data_fx[43] == low && data_fx[44] == low && data_fx[45] == low && data_fx[46] == low && data_fx[47] == low && data_fx[48] == low && data_fx[49] == low && data_fx[4] == low && data_fx[50] == low && data_fx[51] == low && data_fx[52] == low && data_fx[53] == low && data_fx[54] == low && data_fx[55] == low && data_fx[56] == low && data_fx[57] == low && data_fx[58] == low && data_fx[59] == low && data_fx[5] == low && data_fx[60] == low && data_fx[61] == low && data_fx[62] == low && data_fx[63] == low && data_fx[6] == low && data_fx[7] == low && data_fx[8] == low && data_fx[9] == low
+			</condition>
+			<log>
+			</log>
+		</trigger>
+	</instance>
+</chipwatcher>

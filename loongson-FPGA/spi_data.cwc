@@ -1,0 +1,22 @@
+<chipwatcher project_name="fpga" bit_file="fpga_Runs/phy_1/fpga.bit" bid_file="fpga_Runs/phy_1/fpga_inst.bid" chip_name="EG4X20BG256">
+<!-- HMAC is: fd69a62a9f9b11338b61eef1638ae8c6df6fe1084e14597470eeed08076cb51e -->
+	<instance name="auto_chipwatcher_0" id="0" enabled="yes">
+		<clock clk_name="sclk_i" polarity="posedge"/>
+		<config bram_name="auto_chipwatcher_0_logicbram" sample_depth="1024"/>
+		<signal_vec>
+			<data_nets>
+				<net name="miso_o"/>
+			</data_nets>
+			<watcher_nodes>
+				<net name="miso_o" op="equal" type="output" trigger="enable"/>
+			</watcher_nodes>
+		</signal_vec>
+		<trigger name="auto_chipwatcher_0_trigger" position="pre">
+			<condition level="1" enabled="yes" type="basic_and">
+				miso_o == any
+			</condition>
+			<log>
+			</log>
+		</trigger>
+	</instance>
+</chipwatcher>

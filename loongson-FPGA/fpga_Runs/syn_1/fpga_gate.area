@@ -1,0 +1,58 @@
+standard
+***Report Model: top_module Device: EG4X20BG256***
+
+IO Statistics
+#IO                        30
+  #input                   17
+  #output                  13
+  #inout                    0
+
+LUT Statistics
+#Total_luts              9151
+  #lut4                  2355
+  #lut5                     6
+  #lut6                     0
+  #lut5_mx41                0
+  #lut4_alu1b            6790
+
+Utilization Statistics
+#lut                     9151   out of  19600   46.69%
+#reg                      597   out of  19600    3.05%
+#le                         0
+#dsp                        7   out of     29   24.14%
+#bram                       9   out of     64   14.06%
+  #bram9k                   9
+  #fifo9k                   0
+#bram32k                    0   out of     16    0.00%
+#pad                       30   out of    188   15.96%
+  #ireg                    10
+  #oreg                     1
+  #treg                     0
+#pll                        3   out of      4   75.00%
+
+Report Hierarchy Area:
++---------------------------------------------------------------------------------------------------------------+
+|Instance                  |Module                                 |lut     |ripple  |seq     |bram    |dsp     |
++---------------------------------------------------------------------------------------------------------------+
+|top                       |top_module                             |2361    |6790    |608     |9       |7       |
+|  ad_delay                |ad_delay_module                        |17      |37      |36      |0       |0       |
+|    instance_name_my      |clk_wiz_1                              |1       |0       |0       |0       |0       |
+|  adget                   |ADC_get_module                         |4       |0       |4       |0       |0       |
+|  csget                   |detect_module                          |0       |0       |1       |0       |0       |
+|  dac                     |DA_top_module                          |0       |9       |8       |1       |0       |
+|    da_wave_send          |dac                                    |0       |9       |8       |0       |0       |
+|    instance_name_da      |clk_wiz_2                              |0       |0       |0       |0       |0       |
+|    u_rom_256x8b          |blk_mem_gen_0                          |0       |0       |0       |1       |0       |
+|  f_div                   |f_div10_module                         |5       |0       |5       |0       |0       |
+|  f_div2                  |f_div10_module                         |5       |0       |5       |0       |0       |
+|  f_m                     |f_measure_module                       |2155    |5809    |272     |0       |7       |
+|  fifo                    |fifo_module                            |44      |61      |181     |8       |0       |
+|    fifo_generator_0_u    |FIFO                                   |42      |61      |114     |8       |0       |
+|      ram_inst            |ram_infer_FIFO                         |0       |0       |0       |8       |0       |
+|      rd_to_wr_cross_inst |fifo_cross_domain_addr_process_al_FIFO |17      |0       |40      |0       |0       |
+|      wr_to_rd_cross_inst |fifo_cross_domain_addr_process_al_FIFO |21      |0       |46      |0       |0       |
+|  mux                     |mux2_module                            |71      |11      |75      |0       |0       |
+|  pll_clk                 |clk_wizz_0                             |0       |0       |0       |0       |0       |
+|  pulse_get               |pulse                                  |1       |18      |2       |0       |0       |
+|  spi_slave               |SPI_slave_module                       |55      |14      |8       |0       |0       |
++---------------------------------------------------------------------------------------------------------------+

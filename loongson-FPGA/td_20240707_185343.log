@@ -1,0 +1,13 @@
+============================================================
+   Tang Dynasty, V4.6.96021
+   Copyright (c) 2012-2024 Anlogic
+   Executable = D:/anlu/anlogic/bin/td.exe
+   Built at =   14:41:38 Jan  6 2024
+   Run by =     DELL
+   Run Date =   Sun Jul  7 18:53:43 2024
+
+   Run on =     DESKTOP-JE5465V
+============================================================
+RUN-001 : GUI based run...
+GUI-8014 ERROR: Find error in D:\anlu\xuezhang\fpga.al(16) ...
+GUI-8014 ERROR: Find error in D:/anlu/xuezhang/fpga.al(16) ...

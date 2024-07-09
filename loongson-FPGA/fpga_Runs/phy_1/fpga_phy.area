@@ -1,0 +1,118 @@
+standard
+***Report Model: top_module Device: EG4X20BG256***
+
+IO Statistics
+#IO                        30
+  #input                   17
+  #output                  13
+  #inout                    0
+
+Utilization Statistics
+#lut                     7529   out of  19600   38.41%
+#reg                      597   out of  19600    3.05%
+#le                      7624
+  #lut only              7027   out of   7624   92.17%
+  #reg only                95   out of   7624    1.25%
+  #lut&reg                502   out of   7624    6.58%
+#dsp                        7   out of     29   24.14%
+#bram                       9   out of     64   14.06%
+  #bram9k                   9
+  #fifo9k                   0
+#bram32k                    0   out of     16    0.00%
+#pad                       30   out of    188   15.96%
+  #ireg                    10
+  #oreg                     1
+  #treg                     0
+#pll                        3   out of      4   75.00%
+#gclk                       4   out of     16   25.00%
+
+Clock Resource Statistics
+Index     ClockNet                        Type               DriverType         Driver                                      Fanout
+#1        f_m/clk_fs                      GCLK               pll                pll_clk/pll_inst.clkc1                      130
+#2        fifo/fifo_generator_0_u/clkr    GCLK               pll                pll_clk/pll_inst.clkc0                      93
+#3        ad0_clk_dup_1                   GCLK               lslice             ad0_clk_syn_14.f1                           58
+#4        PULSE_G_dup_1                   GCLK               lslice             PULSE_G_syn_9.f0                            49
+#5        csget/mcu_write_start_n         GCLK               lslice             f_m/reg0_syn_331.f0                         48
+#6        ad_delay/clk_20b                GCLK               pll                ad_delay/instance_name_my/pll_inst.clkc2    21
+#7        dac/da_wave_send/clk            GCLK               pll                dac/instance_name_da/pll_inst.clkc1         6
+#8        f_div/clk                       GCLK               pll                pll_clk/pll_inst.clkc2                      3
+#9        f_div2/clk                      GCLK               lslice             f_div/reg0_syn_26.q0                        3
+#10       fx_clk_dup_1                    GeneralRouting     io                 fx_clk_syn_2.di                             1
+#11       sys_clk_dup_1                   GeneralRouting     io                 sys_clk_syn_2.di                            1
+#12       ad1_clk_dup_1                   GCLK               pll                pll_clk/pll_inst.clkc3                      0
+
+
+Detailed IO Report
+
+     Name        Direction    Location    IOStandard    DriveStrength    PullType    PackReg  
+  ad0_data[7]      INPUT        G16        LVCMOS25          N/A          PULLUP      IREG    
+  ad0_data[6]      INPUT        F15        LVCMOS25          N/A          PULLUP      IREG    
+  ad0_data[5]      INPUT        D11        LVCMOS25          N/A          PULLUP      IREG    
+  ad0_data[4]      INPUT        E11        LVCMOS25          N/A          PULLUP      IREG    
+  ad0_data[3]      INPUT        E15        LVCMOS25          N/A          PULLUP      IREG    
+  ad0_data[2]      INPUT        C16        LVCMOS25          N/A          PULLUP      IREG    
+  ad0_data[1]      INPUT        B16        LVCMOS25          N/A          PULLUP      IREG    
+  ad0_data[0]      INPUT        B14        LVCMOS25          N/A          PULLUP      IREG    
+    cs_n_i         INPUT        J16        LVCMOS25          N/A          PULLUP      IREG    
+  fifo_rst_n       INPUT        B12        LVCMOS25          N/A          PULLUP      NONE    
+    fx_clk         INPUT        A11        LVCMOS25          N/A          PULLUP      NONE    
+    mosi_i         INPUT        M16        LVCMOS25          N/A          PULLUP      NONE    
+    sclk_i         INPUT        N16        LVCMOS25          N/A          PULLUP      IREG    
+      sel          INPUT        P15        LVCMOS25          N/A          PULLUP      NONE    
+     sel1          INPUT        R15        LVCMOS25          N/A          PULLUP      NONE    
+    sys_clk        INPUT         T8        LVCMOS25          N/A          PULLUP      NONE    
+   sys_rst_n       INPUT        A12        LVCMOS25          N/A          PULLUP      NONE    
+    PULSE_G       OUTPUT         N4        LVCMOS25           8            NONE       NONE    
+    ad0_clk       OUTPUT        H16        LVCMOS25           8            NONE       NONE    
+    ad1_clk       OUTPUT        A13        LVCMOS25           8            NONE       NONE    
+    da_clk        OUTPUT        H15        LVCMOS25           8            NONE       NONE    
+  da_data[7]      OUTPUT        F16        LVCMOS25           8            NONE       NONE    
+  da_data[6]      OUTPUT        E16        LVCMOS25           8            NONE       NONE    
+  da_data[5]      OUTPUT        C10        LVCMOS25           8            NONE       NONE    
+  da_data[4]      OUTPUT         C9        LVCMOS25           8            NONE       NONE    
+  da_data[3]      OUTPUT        D16        LVCMOS25           8            NONE       NONE    
+  da_data[2]      OUTPUT        C15        LVCMOS25           8            NONE       NONE    
+  da_data[1]      OUTPUT        B15        LVCMOS25           8            NONE       NONE    
+  da_data[0]      OUTPUT        A14        LVCMOS25           8            NONE       NONE    
+    miso_o        OUTPUT        K15        LVCMOS25           8            NONE       OREG    
+
+Report Hierarchy Area:
++-----------------------------------------------------------------------------------------------------------------------+
+|Instance                  |Module                                 |le     |lut     |ripple  |seq     |bram    |dsp     |
++-----------------------------------------------------------------------------------------------------------------------+
+|top                       |top_module                             |7624   |4945    |2584    |608     |9       |7       |
+|  ad_delay                |ad_delay_module                        |56     |37      |19      |37      |0       |0       |
+|    instance_name_my      |clk_wiz_1                              |2      |2       |0       |0       |0       |0       |
+|  adget                   |ADC_get_module                         |4      |4       |0       |4       |0       |0       |
+|  csget                   |detect_module                          |0      |0       |0       |0       |0       |0       |
+|  dac                     |DA_top_module                          |10     |5       |5       |8       |1       |0       |
+|    da_wave_send          |dac                                    |10     |5       |5       |8       |0       |0       |
+|    instance_name_da      |clk_wiz_2                              |0      |0       |0       |0       |0       |0       |
+|    u_rom_256x8b          |blk_mem_gen_0                          |0      |0       |0       |0       |1       |0       |
+|  f_div                   |f_div10_module                         |5      |5       |0       |5       |0       |0       |
+|  f_div2                  |f_div10_module                         |5      |5       |0       |5       |0       |0       |
+|  f_m                     |f_measure_module                       |6570   |4320    |2184    |299     |0       |7       |
+|  fifo                    |fifo_module                            |190    |129     |32      |152     |8       |0       |
+|    fifo_generator_0_u    |FIFO                                   |136    |90      |32      |98      |8       |0       |
+|      ram_inst            |ram_infer_FIFO                         |0      |0       |0       |0       |8       |0       |
+|      rd_to_wr_cross_inst |fifo_cross_domain_addr_process_al_FIFO |30     |27      |0       |30      |0       |0       |
+|      wr_to_rd_cross_inst |fifo_cross_domain_addr_process_al_FIFO |40     |31      |0       |40      |0       |0       |
+|  mux                     |mux2_module                            |71     |65      |6       |63      |0       |0       |
+|  pll_clk                 |clk_wizz_0                             |0      |0       |0       |0       |0       |0       |
+|  pulse_get               |pulse                                  |18     |9       |9       |0       |0       |0       |
+|  spi_slave               |SPI_slave_module                       |48     |40      |8       |17      |0       |0       |
++-----------------------------------------------------------------------------------------------------------------------+
+
+
+DataNet Average Fanout:
+
+   Index     Fanout     Nets  
+    #1          1       5247  
+    #2          2       142   
+    #3          3       2088  
+    #4          4        82   
+    #5        5-10       16   
+    #6        11-50      71   
+    #7       51-100      55   
+    #8       101-500     29   
+  Average     2.78            

@@ -1,0 +1,98 @@
+eagle_20
+13 201 116 0 23 23 0 0
+998.662 infinity top_module eagle_20 EG4X20BG256 Detail NA 27 2
+Path delay: 999.7ns max
+13 10 10 1
+Max path
+23 3
+Endpoint: fifo/fifo_generator_0_u/rd_to_wr_cross_inst/reg3_syn_46
+23 998.809000 1 1
+Timing path: f_m/data_fx_b1_n4154_syn_15.clk->fifo/fifo_generator_0_u/rd_to_wr_cross_inst/reg3_syn_46
+f_m/data_fx_b1_n4154_syn_15.clk
+fifo/fifo_generator_0_u/rd_to_wr_cross_inst/reg3_syn_46
+25 998.809000 999.584000 0.775000 0 1
+fifo/fifo_generator_0_u/rd_to_wr_cross_inst/primary_addr_gray_reg[9] fifo/fifo_generator_0_u/rd_to_wr_cross_inst/reg3_syn_46.mi[0]
+
+
+Endpoint: f_m/data_fx_b1_n4149_syn_32
+50 998.809000 1 1
+Timing path: fifo/fifo_generator_0_u/rd_to_wr_cross_inst/reg0_syn_63.clk->f_m/data_fx_b1_n4149_syn_32
+fifo/fifo_generator_0_u/rd_to_wr_cross_inst/reg0_syn_63.clk
+f_m/data_fx_b1_n4149_syn_32
+52 998.809000 999.584000 0.775000 0 1
+fifo/fifo_generator_0_u/rd_to_wr_cross_inst/primary_addr_gray_reg[7] f_m/data_fx_b1_n4149_syn_32.mi[0]
+
+
+Endpoint: fifo/fifo_generator_0_u/rd_to_wr_cross_inst/reg3_syn_53
+77 998.935000 1 1
+Timing path: f_m/data_fx_b1_n4153_syn_19.clk->fifo/fifo_generator_0_u/rd_to_wr_cross_inst/reg3_syn_53
+f_m/data_fx_b1_n4153_syn_19.clk
+fifo/fifo_generator_0_u/rd_to_wr_cross_inst/reg3_syn_53
+79 998.935000 999.584000 0.649000 0 1
+fifo/fifo_generator_0_u/rd_to_wr_cross_inst/primary_addr_gray_reg[5] fifo/fifo_generator_0_u/rd_to_wr_cross_inst/reg3_syn_53.mi[1]
+
+
+
+
+Path delay: 999.7ns max
+106 13 13 1
+Max path
+116 3
+Endpoint: fifo/fifo_generator_0_u/sub1_syn_78
+116 998.662000 1 1
+Timing path: fifo/fifo_generator_0_u/wr_to_rd_cross_inst/reg0_syn_67.clk->fifo/fifo_generator_0_u/sub1_syn_78
+fifo/fifo_generator_0_u/wr_to_rd_cross_inst/reg0_syn_67.clk
+fifo/fifo_generator_0_u/sub1_syn_78
+118 998.662000 999.584000 0.922000 0 1
+fifo/fifo_generator_0_u/wr_to_rd_cross_inst/primary_addr_gray_reg[2] fifo/fifo_generator_0_u/sub1_syn_78.mi[1]
+
+
+Endpoint: fifo/fifo_generator_0_u/wr_to_rd_cross_inst/reg3_syn_60
+143 998.809000 1 1
+Timing path: fifo/fifo_generator_0_u/wr_to_rd_cross_inst/reg0_syn_76.clk->fifo/fifo_generator_0_u/wr_to_rd_cross_inst/reg3_syn_60
+fifo/fifo_generator_0_u/wr_to_rd_cross_inst/reg0_syn_76.clk
+fifo/fifo_generator_0_u/wr_to_rd_cross_inst/reg3_syn_60
+145 998.809000 999.584000 0.775000 0 1
+fifo/fifo_generator_0_u/wr_to_rd_cross_inst/primary_addr_gray_reg[6] fifo/fifo_generator_0_u/wr_to_rd_cross_inst/reg3_syn_60.mi[0]
+
+
+Endpoint: fifo/fifo_generator_0_u/wr_to_rd_cross_inst/reg1_syn_46
+170 998.809000 1 1
+Timing path: fifo/fifo_generator_0_u/wr_to_rd_cross_inst/reg0_syn_76.clk->fifo/fifo_generator_0_u/wr_to_rd_cross_inst/reg1_syn_46
+fifo/fifo_generator_0_u/wr_to_rd_cross_inst/reg0_syn_76.clk
+fifo/fifo_generator_0_u/wr_to_rd_cross_inst/reg1_syn_46
+172 998.809000 999.584000 0.775000 0 1
+fifo/fifo_generator_0_u/wr_to_rd_cross_inst/primary_addr_gray_reg[7] fifo/fifo_generator_0_u/wr_to_rd_cross_inst/reg1_syn_46.mi[0]
+
+
+
+
+
+Timing group statistics: 
+	Clock constraints: 
+	  No constraint path
+	Minimum input arrival time before clock: no constraint path
+	Maximum output required time after clock: no constraint path
+	Maximum combinational path delay: no constraint path
+Warning: No clock constraint on 12 clock net(s): 
+	PULSE_G_syn_5
+	ad0_clk_syn_7
+	ad1_clk_dup_1
+	ad_delay/clk_20b
+	csget/mcu_write_start_n_syn_2
+	dac/da_wave_send/clk
+	f_div/clk
+	f_div2/clk_syn_4
+	f_m/clk_fs
+	fifo/fifo_generator_0_u/clkr
+	fx_clk_dup_1
+	sys_clk_dup_1
+
+	Exceptions:
+
+		Check Type:	MIN
+		----------------------------------------------------------------------------------------------------
+		       Path Num     Constraint                                                                      
+		             10     set_false_path -hold -from [ get_regs {rd_to_wr_cross_inst/primary_addr_gray_reg[*]} ] -to [ get_regs {rd_to_wr_cross_inst/sync_r1[*]} ]
+		             13     set_false_path -hold -from [ get_regs {wr_to_rd_cross_inst/primary_addr_gray_reg[*]} ] -to [ get_regs {wr_to_rd_cross_inst/sync_r1[*]} ]
+
